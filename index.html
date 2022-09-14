@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
+
     <title> ABOUT BHARATH KUMAR REDDY MOPURU </title>
 </head>
+
 <body>
     <h1> Hi this is BHARATH KUMAR REDDY MOPURU </h1>
     <h3> Favorite museum to visit</h3>
     <h4>THE BRITISH MUSEUM</h4>
-    <p>In this the famous <b>AMARAVATI SCULPTURES</b> and <b>MUGHAL EMPIRE ARTIFACTS</b> 
-       are the must see exhibits. Apart from that it has many artifacts from <b> Vijayanagara Empire</b> that
-       will take us back to the rich Indian heritage.  </p>
+    <p>In this the famous <b>AMARAVATI SCULPTURES</b> and <b>MUGHAL EMPIRE ARTIFACTS</b>
+        are the must see exhibits. Apart from that it has many artifacts from <b> Vijayanagara Empire</b> that
+        will take us back to the rich Indian heritage. </p>
     <hr>
     <h4> NAVIGATION
-         <br> Nearest Airport is Heathrow Airport.
+        <br> Nearest Airport is Heathrow Airport.
     </h4>
 
     <ol>
-        <li> From airpoth terminal 2 and 3, a train service <i> Heathrow express </i> that takes to Paddington station. </li>
-             <ol>
-                <li> Exit paddington rail station and walk about 2 min Northwest and change line to Elizabeth line. </li>
-                <li> From Elizabeth line, Take a metro to Tottenham Court Road station it is just  a 5min raid. </li>
-             </ol>      
-         <li> From there head northwest toward Great Russell St in 0.3 mile destination will be on right. </li>
+        <li> From airpoth terminal 2 and 3, a train service <i> Heathrow express </i> that takes to Paddington station.
+        </li>
+        <ol>
+            <li> Exit paddington rail station and walk about 2 min Northwest and change line to Elizabeth line. </li>
+            <li> From Elizabeth line, Take a metro to Tottenham Court Road station it is just a 5min raid. </li>
+        </ol>
+        <li> From there head northwest toward Great Russell St in 0.3 mile destination will be on right. </li>
     </ol>
     <h4>Other recomendation places are</h4>
     <ul>
@@ -31,10 +34,12 @@
         <li> Sir John Soane's Museum. </li>
         <li> Madame Tussauds London. </li>
     </ul>
-    <a href="file:///C:/Users/s555694/Desktop/webapps-repos/44563-webapps-assignment-3-BharathMopuru/Aboutme.html">aboutme</a>
+    <a
+        href="file:///C:/Users/s555694/Desktop/webapps-repos/44563-webapps-assignment-3-BharathMopuru/Aboutme.html">aboutme</a>
     <hr>
     <h4> Table of recomended cities </h4>
-    <p> The below table discribes about the importent place in India that have a very old history and reminds us there heritage. </p>
+    <p> The below table discribes about the importent place in India that have a very old history and reminds us there
+        heritage. </p>
     <table>
         <tr>
             <th> City Name </th>
@@ -62,5 +67,31 @@
             <td> 2 days </td>
         </tr>
     </table>
+    <hr>
+    <h4> code of Sass </h4>
+    <blockquote> String replace in Sass </blockquote>
+    <a href="https://stackoverflow.com/questions/12728634/string-replace-in-sass">stack over flow question link</a>
+    <pre>
+        /// Replace `$search` with `$replace` in `$string`
+        /// @author Kitty Giraudel
+        /// @param {String} $string - Initial string
+        /// @param {String} $search - Substring to replace
+        /// @param {String} $replace ('') - New value
+        /// @return {String} - Updated string
+        @function str-replace($string, $search, $replace: '') {
+        $index: str-index($string, $search);
+        
+        @if $index {
+        @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)),
+        $search, $replace);
+        }
+        
+        @return $string;
+        }
+    </pre>
+    <a href="https://css-tricks.com/snippets/sass/str-replace-function/"> css trick link </a>
+   
+
 </body>
+
 </html>
